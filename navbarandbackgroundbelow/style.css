@@ -1,0 +1,109 @@
+:root {
+    --color-primary: rgb(97, 97, 227);
+    --color-white: #fff;
+    --color-black: black;
+    --color-black-1: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.menu__bar {
+    background-color: var(--color-black);
+
+    height: 80px;
+    /*the same height in hero */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+.logo {
+    color: var(--color-white);
+    font-size: 30px;
+}
+
+.logo span {
+    color: var(--color-primary);
+}
+
+.menu__bar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menu__bar ul li {
+    padding: 10px 30px;
+    position: relative;
+    /*change*/
+}
+
+.menu__bar ul li a {
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu__bar ul li a:hover {
+    color: var(--color-primary);
+    transition: .3s all;
+}
+
+.dropdown__menu {
+    display: none;
+}
+
+.menu__bar ul li:hover .dropdown__menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+
+.menu__bar ul li:hover .dropdown__menu ul {
+    display: block;
+    margin: 10px;
+}
+
+.menu__bar ul li:hover .dropdown__menu ul li {
+    width: 150px;
+    padding: 10px;
+}
+
+.dropdown__menu1 {
+    display: none;
+}
+
+.dropdown__menu ul li:hover .dropdown__menu1 {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 150px;
+    background-color: var(--color-black);
+
+}
+
+.hero {
+    margin-top: 0px;
+    height: calc(100vh - 80px);
+    background-image: url(./chicago.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fas{
+    float: right;
+    margin-left:10px ;
+    padding-top: 3px;
+}
