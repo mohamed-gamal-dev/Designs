@@ -17,9 +17,7 @@ body {
 
 .menu__bar {
     background-color: var(--color-black);
-
-    height: 80px;
-    /*the same height in hero */
+    height: 80px; /*the same height in hero */
     width: 100%;
     display: flex;
     align-items: center;
@@ -95,7 +93,7 @@ body {
 
 .hero {
     margin-top: 0px;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 80px); /*the same height in here */
     background-image: url(./chicago.jpg);
     background-position: center;
     background-size: cover;
