@@ -1,0 +1,134 @@
+/* Start General Rules */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* End General Rules */
+
+/* Start Nav Bar */
+
+nav {
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+nav ul {
+    cursor: pointer;
+}
+
+nav ul li {
+    width: 25px;
+    height: 3px;
+    background-color: #555;
+    margin: 10px;
+    border-radius: 2px;
+}
+
+
+
+/* End Nav Bar */
+
+/* Start Image Gallery */
+
+
+
+.img-gallery .img {
+    margin-bottom: 40px;
+}
+
+.img-gallery .third-row {
+    margin-top: 40px;
+}
+
+.img-gallery .third-row ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img-gallery .third-row ul li {
+    width: fit-content;
+    height: 40px;
+    line-height: 40px;
+    transition: all .5s ease-in-out;
+}
+
+.img-gallery .third-row ul li:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.img-gallery .third-row ul li:nth-child(2) {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    height: 40px;
+    line-height: 40px;
+    transition: all .5s ease-in-out;
+}
+
+.img-gallery .third-row ul li:nth-child(2):hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* End Image Gallery */
+
+/* Start First Hr */
+
+.hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* End First Hr */
+
+/* Start About Section */
+
+.about img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.about p {
+    margin-top: 20px;
+}
+
+.about p.lead {
+    font-weight: bold;
+}
+
+/* End About Section */
+
+/* Start Section footer */
+
+footer .blog .row {
+    padding: 10px;
+}
+
+footer .blog .row:hover {
+    background-color: #ccc;
+}
+
+footer .popular ul li {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: #fff;
+    background-color: #616161;
+    margin-left: 5px;
+    text-align: center;
+    width: fit-content;
+}
+
+footer .popular ul li:nth-child(1) {
+    background-color: #000;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* End Section footer */
